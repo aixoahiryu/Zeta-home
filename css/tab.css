@@ -1,0 +1,33 @@
+.tablinks{ z-index: 9999px; border-bottom-color: transparent !important; }
+
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+  float: left;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+}
+
+.tab button.active {
+}
+
+.tabcontent {
+	display: none;  margin-top: 0px;
+}
+
+.tablinks.active.green{ color: black !important; background-color: #6effbe !important; border-bottom-color: #6effbe !important; }
+.tablinks.active.amber{ color: black !important; background-color: #FFCC00 !important; border-bottom-color: #FFCC00 !important; }
+.tablinks.active.pink{ color: black !important; background-color: #ec5555 !important; border-bottom-color: #ec5555 !important; }
+.tablinks.active.blue{ color: black !important; background-color: #00FFFF !important; border-bottom-color: #00FFFF !important; }
+.tablinks.active.white{ color: black !important; background-color: #ffffff !important; border-bottom-color: #ffffff !important; }
+.tablinks.green{ color: 6effbe !important;  cursor: pointer; }
+.tablinks.amber{ color: FFCC00 !important; cursor: pointer; }
+.tablinks.pink{ color: ec5555 !important; cursor: pointer; }
+.tablinks.blue{ color: 00FFFF !important; cursor: pointer; }
+.tablinks.white{ color: ffffff !important; cursor: pointer; }
