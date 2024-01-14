@@ -1,0 +1,13 @@
+zlenc(){
+cat /dev/clipboard | openssl aes-256-cbc -pbkdf2 -iter 100000 -a -salt -pass pass:$1
+}
+zldec(){
+cat /dev/clipboard | openssl aes-256-cbc -d -a -pbkdf2 -iter 100000 -pass pass:$1
+}
+zlencf(){
+cat "$1" | openssl aes-256-cbc -pbkdf2 -iter 100000 -a -salt -pass pass:$2 > "$1.txt"
+}
+zldecf(){
+cat "$1.txt" | openssl aes-256-cbc -d -a -pbkdf2 -iter 100000 -pass pass:$2 > "$1"
+}
+
